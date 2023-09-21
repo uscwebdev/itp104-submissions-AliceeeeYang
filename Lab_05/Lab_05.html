@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Intereste Form</title>
+	<style>
+		#header{
+			text-align: center;
+		}
+
+		#main {
+			width: 500px;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 10px;
+			border: 1px solid #000;
+		}
+
+		.form-row {
+			margin: 10px 0px;
+			display: flex;
+			padding: 10px;
+
+		}
+		.left-col {
+			width: 200px;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="header">
+		<h1>Debate Team Interest Form</h1>
+	</div> <!-- #header -->
+
+	
+	<div id="main">
+		
+			
+		<form action="confirmation.html">
+			<div class="form-row">
+
+				<div class="left-col">
+					<label for="name-id">Name:</label>
+				</div>
+
+				<input type="text" id="name-id" placeholder="David Tommy">
+			</div>
+
+			<div class="form-row">
+
+				<div class="left-col">
+					<label for="email-id">School Email:</label>
+				</div>
+
+				<input type="email" id="email-id" placeholder="ttrojan@usc.edu">
+			</div>
+
+			<div class="form-row">
+				<div class="left-col">
+					Which class are you in?
+				</div>
+
+				<label>
+					<input type="radio" name="class">
+					2024
+				</label>
+
+				<label>
+					<input type="radio" name="class">
+					2025
+				</label>
+
+				<label>
+					<input type="radio" name="class">
+					2026
+				</label>
+
+				<label>
+					<input type="radio" name="class">
+					2027
+				</label>
+
+			</div>
+
+			<div class="form-row">
+				<div class="left-col">
+					How did you here from us?
+				</div>
+
+				<label>
+					<input type="checkbox">
+					Social Media
+				</label>
+
+				<label>
+					<input type="checkbox">
+					Friends
+				</label>
+
+				<label>
+					<input type="checkbox">
+					Poster
+				</label>
+			</div>
+
+			<div class="form-row">
+
+			
+				<div class="left-col">
+					<label for="meeting-id">Avaliability for Meetings:</label>
+				</div>
+
+				<select id="meeting-id">
+					<option>Monday 6Pm-7Pm</option>
+					<option>Tuesday 6Pm-7Pm</option>
+					<option>Thursday 6Pm-7Pm</option>
+					<option>Other...</option>
+				</select>
+
+				</label>
+			</div>
+
+
+
+				<div class="form-row">
+					
+					<div class="left-col">
+						<label for="text-id">Any Previous Experience:</label>
+					</div>
+				<textarea id="text-id" placeholder="My previous experience..."></textarea>
+				
+				</div>
+
+				<div class="form-row">
+					<div class="left-col">
+						By clicking on Accept, you are agreeing on our Terms & Conditions.
+					</div>
+	
+					<label>
+						<input type="checkbox">
+						Accept
+					</label>
+	
+				</div>
+			<div class="form-row">
+				<button type="submit">Send</button>
+				<button type="reset">Clear</button>
+			</div>
+		</form>
+
+		
+
+	</div> <!-- #main -->
+
+</body>
+</html>
