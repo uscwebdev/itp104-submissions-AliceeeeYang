@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Photo Gallery</title>
+	
+	<style>
+
+        #header {
+            background-position: center;
+            color: #FFC;
+            font-size: 1.5em;
+            text-align: center;
+            text-shadow: 0px 0px 10px #000;
+            height: 200px;
+            line-height: 100px;
+        }
+
+        #footer {
+            background-color: #777;
+            color: #FFF;
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+            font-size: 0.8em;
+}
+
+		#gallery {
+			display: flex;
+			align-items: flex-start;
+            justify-content: center;
+		}
+
+		.picture{
+			width: 250px;
+			height: auto;
+			margin: 5px;
+			opacity: 0.8; 
+		}
+
+		.picture:hover{
+			opacity: 1.0;
+		}
+
+		.img> p {
+			text-align: center;
+			visibility: hidden;
+		}
+
+		.picture:hover + p {
+			visibility: visible;
+		}
+
+	
+	</style>
+</head>
+<body>
+
+	<div id="header">
+		<h1>Places I Went in Summer</h1>
+	</div> 
+
+		<div id="gallery">
+
+			<div class="img">
+				<img class="picture" src="img/1.JPG" alt="Sea">
+				<p>Sea</p>
+			</div>
+			
+			<div class="img">
+				<img class="picture" src="img/2.JPG" alt="Disneyland">
+				<p>Disneyland</p>
+			</div>
+
+			<div class="img">
+				<img class="picture" src="img/3.JPG" alt="Forest">
+				<p>Forest</p>
+			</div>
+
+			<div class="img">
+				<img class="picture" src="img/4.jpeg" alt="Great Wall">
+				<p>Great Wall</p>
+			</div>
+
+            <div class="img">
+				<img class="picture" src="img/5.jpeg" alt="Temple of Heaven">
+				<p>Temple of Heaven</p>
+			</div>
+
+
+		</div> <!-- #gallery -->
+
+	<div id="footer">
+		University of Southern California &copy; 2018
+	</div> <!-- #footer -->
+
+</body>
+</html>
