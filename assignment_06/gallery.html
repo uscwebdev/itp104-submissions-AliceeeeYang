@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+	<title>Gallery Page</title>
+
+    <link rel="stylesheet" href="share.css">
+
+	<style>
+       
+       #header {
+			height: 300px;
+            font-size: 1.5em;
+			text-align: center;
+			line-height: 300px;
+			background-image: url("img/def.jpg");
+			background-size: cover;
+			background-position: center;
+			color: #FFF;
+			text-shadow: 0px 0px 10px #000;
+       }
+   
+        #images{
+            width: 800px;
+            padding: 10px;
+            border: 1px solid#000;
+            margin: auto;
+       }
+       
+       #top{
+        display: flex;
+        flex-wrap: wrap;
+        width: 910px;
+
+
+       }
+
+    
+       #right{
+        width: 300px;
+        display:flex;
+        flex-wrap: wrap;
+       } 
+
+       .flex{
+        display: flex;
+       }
+
+       #flex1{
+        width: 310px;
+        display:flex;
+        flex-wrap: wrap;
+
+       }
+
+       #flex2{
+        width: 300px;
+        display:flex;
+        flex-wrap: wrap;
+
+       }
+
+
+    
+
+       #a{
+            width: 490px;
+            height:500px;
+            margin: 0px 10px 10px 0px;
+            border: 1px solid #000;
+            background-color: lightgray;
+            overflow: hidden;
+            
+       }
+
+       #a1{
+          width: 100%;
+          height: auto;
+
+       }
+
+       #b{
+            width: 295px;
+            height:244px;
+            margin: 0px 0px 10px 0px;
+            border: 1px solid #000;
+            background-color: lightgray;
+            overflow: hidden;
+       }
+
+       #a2{
+          width: auto;
+          height: 100%;
+       }
+
+       #c{
+
+            width: 295px;
+            height:244px;
+            margin: 0px 0px 10px 0px;
+            border: 1px solid #000;
+            background-color: lightgray;
+            overflow: hidden;
+
+       }
+
+       #a3{
+          width: auto;
+          height: 100%;
+       }
+
+       #d{
+            width: 180px;
+            height:500px;
+            margin: 0px 10px 0px 0px;
+            border: 1px solid #000;
+            background-color: lightgray;
+            overflow: hidden;
+       }
+
+       #a4{
+          width: auto;
+          height: 100%;
+       }
+
+       #e{
+            width: 300px;
+            height:159px;
+            margin: 0px 10px 10px 0px;
+            border: 1px solid #000;
+            background-color: lightgray;
+            overflow: hidden;
+       }
+
+       #a5{
+          width: 100%;
+          height: auto;
+       }
+
+       #f{
+            width: 300px;
+            height:159px;
+            margin: 0px 10px 10px 0px;
+            border: 1px solid #000;
+            background-color: lightgray;
+            overflow: hidden;
+       }
+
+       #a6{
+          width: 100%;
+          height: auto;
+       }
+
+       #g{
+            width: 300px;
+            height:158px;
+            margin: 0px 10px 0px 0px;
+            border: 1px solid #000;
+            background-color: lightgray;
+            overflow: hidden;
+
+       }
+
+       #a7{
+          width: 100%;
+          height: auto;
+       }
+
+       #h{
+            width: 295px;
+            height:158px;
+            margin: 0px 0px 10px 0px;
+            border: 1px solid #000;
+            background-color: lightgray;
+            overflow: hidden;
+       }
+       
+       #a8{
+          width: auto;
+          height: 100%;
+       }
+
+       #i{
+            width: 141px;
+            height:331px;
+            margin: 0px 10px 0px 0px;
+            border: 1px solid #000;
+            background-color: lightgray;
+            overflow: hidden;
+       }
+
+       #a9{
+          width: auto;
+          height: 100%;
+       }
+
+       #j{
+
+            width: 141px;
+            height:331px;
+            margin: 0px 0px 0px 0px;
+            border: 1px solid #000;
+            background-color: lightgray;
+            overflow: hidden;
+
+       }
+
+       #a10{
+          width: auto;
+          height: 100%;
+       }
+		
+   
+
+          .image-container {
+			background-color: #CCC;
+			margin: 10px;
+			width: 220px;
+			height: 220px;
+			overflow: hidden;
+			position: relative;
+		}
+		.over {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+               z-index: 9999;
+
+			background-color: rgba(0, 0, 0, 0.6);
+			color: #FFF;
+			text-align: center;
+
+			padding-top: 100px;
+
+			visibility: hidden;
+
+		}
+		.image-container:hover .over {
+			visibility: visible;
+		}
+
+          #b1{
+               padding-top: 200px;
+          }
+
+          #b2{
+               padding-top: 200px;
+          }
+
+          #b3{
+               padding-top: 70px;
+          }
+
+          #b4{
+               padding-top: 70px;
+          }
+
+          #b5{
+               padding-top: 70px;
+          }
+
+          #b6{
+               padding-top: 70px;
+          }
+
+          #b7{
+               padding-top: 150px;
+          }
+          #b8{
+               padding-top: 150px;
+          }
+		
+	</style>
+	
+</head>
+<body>
+
+	<div id="header">
+		<h1>Gallery</h1>
+	</div>
+	<!-- #header -->
+
+     <div id="navbar">
+		<ul id="top-menu">
+		<li>
+			<a href="assignment_06.html">Home</a>
+			<ul id="sub-menu">
+				<li><a href="assignment_06.html#hiking">Definition</a></li>
+				<li><a href="assignment_06.html#benefit">Benefit</a></li>
+				<li><a href="assignment_06.html#trails">Trails</a></li>
+			</ul>
+		</li>
+		
+		<li><a id="highlight-nav" href="gallery.html#gallery">Gallery</a></li>
+
+          </ul>
+	</div>
+
+
+    <div id="images">
+
+           <div id="top">
+                <!-- <div id="a">
+                    <img id="a1" src="img/benefit.jpeg" alt="benefit">
+                    <div class="over">Benefit</div>
+                </div>
+            
+                <div id="right">
+                    <div id="b">
+                         <img id="a2" src="img/burbank.jpg" alt="burbank">
+                         <div class="over">Burbank</div>
+                    </div>
+              
+                    <div id="c">
+                         <img id="a3" src="img/def.jpg" alt="Definition">
+                         <div class="over">Definition</div>
+                    </div>
+             -->
+
+             <div class="image-container" id="a">
+               <img id="a1" src="img/benefit.jpeg" alt="benefit">
+               <div class="over" id="b1">Benefit</div>
+           </div>
+       
+           <div id="right">
+               <div class="image-container" id="b">
+                    <img id="a2" src="img/burbank.jpg" alt="burbank">
+                    <div class="over">Burbank</div>
+               </div>
+         
+               <div class="image-container" id="c">
+                    <img id="a3" src="img/def.jpg" alt="Definition">
+                    <div class="over">Definition</div>
+               </div>
+       
+                </div>
+            </div>
+            <!-- right -->
+             
+
+            <div class="flex">
+           
+            <div class="image-container" id="d">
+               <img id="a4" src="img/griffith.jpg" alt="griffith">
+               <div class="over" id="b2">Griffith</div>
+                
+            </div>
+
+            <div id="flex1">
+            <div class="image-container" id="e">
+               <img id="a5" src="img/hiking.jpeg" alt="hiking">
+               <div class="over" id="b3">Hiking</div>
+                
+            </div>
+
+            <div class="image-container" id="f">
+               <img id="a6" src="img/hollywood.jpg" alt="hollywood">
+               <div class="over" id="b4">Hollywood</div>
+                
+            </div>
+
+            <div class="image-container" id="g">
+               <img id="a7" src="img/inspiration.jpg" alt="inspiration">
+               <div class="over" id="b5">Inspiration</div>
+                
+            </div>
+        </div>
+        <!-- flex1 -->
+       
+
+        <div id="flex2">
+            <div class="image-container" id="h">
+               <img id="a8" src="img/mountain.jpg" alt="mountain">
+               <div class="over" id="b6">Mountain</div>
+                
+            </div>
+       
+            <div class="image-container" id="i">
+               <img id="a9" src="img/riverside.jpg" alt="riverside">
+               <div class="over" id="b7">Riverside</div>
+                
+            </div>
+
+            <div class="image-container" id="j">
+               <img id="a10" src="img/trail.jpeg" alt="trail">
+               <div class="over" id="b8">Trail</div>
+            </div>
+
+        </div>
+        <!-- flex2 -->
+
+       
+
+        </div>
+        <!-- flex -->
+    </div>
+
+	<div id="footer">
+		Haoming Yang &copy; 2023
+	</div>
+
+</body>
+</html>
