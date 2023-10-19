@@ -3,6 +3,9 @@
 <html>
     <HEAD>
         <title> Haoming (Alice) Yang | Student Page </title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <style>
             strong{
                 background-color: CornflowerBlue;
@@ -30,16 +33,12 @@
 
             }
 
-            #favorite{
+            .columns{
                 width:350px;
             
               
             }
-            #class{
-                width:350px;
-             
-              
-            }
+           
 
             #second-section{
                 display: flex;
@@ -48,15 +47,41 @@
 
             }
 
-            #assignment{
-                width:350px;
-         
+
+            @media (max-width: 767px) {
+			body {
+                margin: 0px;
+                /* background-color: blue; */
+			}
+
+            #main {
+                width:  90%;
+                padding: 2.5%;
+                margin: 15px 2.5%;
             }
 
-            #lab{
-                width:350px;
-               
+			#first-section{
+				flex-direction: column;
+                width: 100%;
+            
+			}
+
+			#second-section {
+				flex-direction: column;
+                width: 100%;
+			}
+
+            .columns{
+                width:auto;
+                padding: 0px;
+                border: none;
             }
+
+			#img{
+				width: 100%;
+				height: auto;
+			}
+		}
         </style>
     </HEAD>
 <body>
@@ -67,15 +92,15 @@
     <hr>
     
     <div id="first-section">
-        <div id="favorite">
+        <div class="columns">
     <p>Favorite Color: <strong>Blue</strong></p>
     <p>Favorite Website: <a target="_blank" href="https://Youtube.com">Youtube</a></p>
     <p>Favorite Activity:</p>
   
-    <img src="hike.png" alt="favorite activity">
+    <img id="img" src="hike.png" alt="favorite activity">
         </div>  
 
-        <div id="class">
+        <div class="columns">
     <p>Fall 2023 Schedule:</p>
     <ol>
         <li>ITP 104</li>
@@ -90,7 +115,7 @@
 
  <div id="second-section">
     
-    <div id="assignment">
+    <div class="columns">
     <p>Completed Assignments</p>
     <ul>
         <li><a a target="_blank" href="assignment_01/resume.html">Assignment 1</a></li>
@@ -102,12 +127,13 @@
     </ul>
     </div>
 
-    <div id="lab">
+    <div class="columns">
 
     <p>Completed Labs</p>
     <ul>
         <li><a target="_blank" href="index.html">Lab 2</a></li>
         <li><a target="_blank" href="Lab-03/resume copy.html">Lab 3</a></li>
+        <li><a target="_blank" href="index.html">Lab 4</a></li>
         <li><a target="_blank" href="Lab_05/Lab_05.html">Lab 5</a></li>
         <li><a target="_blank" href="Lab_06/Lab_06.html">Lab 6</a></li>
         <li><a target="_blank" href="lab_07/lab_07.html">Lab 7</a></li>
