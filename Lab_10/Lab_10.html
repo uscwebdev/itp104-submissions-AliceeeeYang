@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LAB 10</title>
+	<style>
+
+        h1{
+                text-align:center;
+                color: red;
+            }
+
+        .img {
+            position: relative;
+       
+  
+}   
+        #a{
+            height: 300px;
+            width: auto;
+            position: absolute;
+            top: 150px;
+            left: 350px;
+            z-index: 3;
+        }
+
+        #b{
+            height: 300px;
+            width: auto;
+            position: absolute;
+            top: 180px;
+            left: 380px;
+            z-index: 2;
+        }
+
+        #c{
+            height: 300px;
+            width: auto;
+            position: absolute;
+            top: 210px;
+            left: 410px;
+        }
+
+        #img:hover img:nth-child(1){
+            transform: translate(-50px, -50px) rotate(-10deg);
+            transition: all 1.5s ease;
+        }
+
+        #img:hover img:nth-child(2){
+            transform: translate(50px, 50px) rotate(10deg);
+            transition: all 1.5s ease;
+        }
+
+        #img:hover img:nth-child(3){
+            transform: translate(100px, 100px) rotate(20deg);
+            transition: all 2s ease;
+        }
+       
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Christmas Holiday</h1>
+    <div id="img">
+        <img id="a" src="img/a.jpeg" alt="christmas">
+        <img id="b" src="img/b.webp" alt="christmas">
+        <img id="c" src="img/c.webp" alt="christmas">
+    </div>
+
+</body>
+</html>
